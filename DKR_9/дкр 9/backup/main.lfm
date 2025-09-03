@@ -1,0 +1,125 @@
+object fMain: TfMain
+  Left = 483
+  Height = 581
+  Top = 281
+  Width = 1054
+  BorderStyle = bsDialog
+  Caption = 'Аренда квартир'
+  ClientHeight = 581
+  ClientWidth = 1054
+  Color = 4013343
+  DesignTimePPI = 120
+  Position = poDesktopCenter
+  LCLVersion = '4.0.0.4'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 1054
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 1054
+    ParentBackground = False
+    TabOrder = 0
+    object bDel: TSpeedButton
+      Left = 216
+      Height = 47
+      Top = 2
+      Width = 200
+      Caption = 'Удалить квартиру'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -18
+      Font.Name = 'Sitka Banner'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+      OnClick = bDelClick
+    end
+    object bAdd: TSpeedButton
+      Left = 8
+      Height = 47
+      Top = 2
+      Width = 200
+      Caption = 'Добавить квартиру'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -18
+      Font.Name = 'Sitka Banner'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+      OnClick = bAddClick
+    end
+    object bChange: TSpeedButton
+      Left = 424
+      Height = 47
+      Top = 2
+      Width = 200
+      Caption = 'Внести правки'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -18
+      Font.Name = 'Sitka Banner'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+      OnClick = bChangeClick
+    end
+    object bSorttype: TSpeedButton
+      Left = 632
+      Height = 47
+      Top = 2
+      Width = 200
+      Caption = 'Сортировать по типу '
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -18
+      Font.Name = 'Sitka Banner'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+      OnClick = bSorttypeClick
+    end
+    object bSortstatus: TSpeedButton
+      Left = 840
+      Height = 47
+      Top = 2
+      Width = 200
+      Caption = 'Сортировать по статусу'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -18
+      Font.Name = 'Sitka Banner'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+      OnClick = bSortstatusClick
+    end
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 531
+    Top = 50
+    Width = 1054
+    Align = alClient
+    Color = 5526569
+    ColCount = 6
+    FixedColor = 10329344
+    FixedCols = 0
+    FocusColor = 4802853
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -18
+    Font.Name = 'Sitka Banner'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    GridLineColor = 3684381
+    ParentFont = False
+    RowCount = 1
+    TabOrder = 1
+    OnDblClick = bChangeClick
+  end
+end

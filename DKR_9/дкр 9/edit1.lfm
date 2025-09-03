@@ -1,0 +1,211 @@
+object fEdit: TfEdit
+  Left = 348
+  Height = 436
+  Top = 413
+  Width = 811
+  BorderStyle = bsDialog
+  Caption = 'Редактор записи'
+  ClientHeight = 436
+  ClientWidth = 811
+  DesignTimePPI = 120
+  Position = poMainFormCenter
+  LCLVersion = '4.0.0.4'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  object Label1: TLabel
+    Left = 16
+    Height = 33
+    Top = 18
+    Width = 399
+    Caption = 'Укажите кол-во комнат (однокомнатная): '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Sitka Banner'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 33
+    Top = 69
+    Width = 147
+    Caption = 'Укажите адрес: '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Sitka Banner'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 17
+    Height = 33
+    Top = 168
+    Width = 206
+    Caption = 'Выберите срок сдачи: '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Sitka Banner'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 17
+    Height = 33
+    Top = 224
+    Width = 245
+    Caption = 'Укажите номер телефона: '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Sitka Banner'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 17
+    Height = 33
+    Top = 280
+    Width = 162
+    Caption = 'Выберите статус: '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Sitka Banner'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object eAdress: TEdit
+    Left = 416
+    Height = 41
+    Top = 61
+    Width = 360
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Sitka Banner'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+    OnChange = eAdressChange
+  end
+  object eNomber: TEdit
+    Left = 417
+    Height = 41
+    Top = 216
+    Width = 360
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Sitka Banner'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+  end
+  object CBTime: TComboBox
+    Left = 417
+    Height = 41
+    Top = 160
+    Width = 359
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Sitka Banner'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 33
+    ItemIndex = 0
+    Items.Strings = (
+      'Посуточно'
+      'Долгосрочно'
+    )
+    ParentFont = False
+    TabOrder = 2
+    Text = 'Посуточно'
+  end
+  object CBStatus: TComboBox
+    Left = 418
+    Height = 41
+    Top = 272
+    Width = 359
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Sitka Banner'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 33
+    ItemIndex = 0
+    Items.Strings = (
+      'Сдаётся'
+      'Не сдается'
+    )
+    ParentFont = False
+    TabOrder = 3
+    Text = 'Сдаётся'
+  end
+  object bSave: TBitBtn
+    Left = 41
+    Height = 54
+    Top = 352
+    Width = 272
+    Caption = 'Сохранить запись'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 4
+  end
+  object bCancel: TBitBtn
+    Left = 448
+    Height = 54
+    Top = 352
+    Width = 272
+    Cancel = True
+    Caption = 'Не сохранять запись'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 5
+  end
+  object eTip: TEdit
+    Left = 417
+    Height = 41
+    Top = 10
+    Width = 360
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Sitka Banner'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 6
+    OnChange = eAdressChange
+  end
+  object Label6: TLabel
+    Left = 17
+    Height = 33
+    Top = 120
+    Width = 180
+    Caption = 'Укажите площадь: '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Sitka Banner'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object eS: TEdit
+    Left = 416
+    Height = 41
+    Top = 112
+    Width = 360
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Sitka Banner'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 7
+    OnChange = eAdressChange
+  end
+end
