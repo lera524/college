@@ -1,0 +1,80 @@
+object Form1: TForm1
+  Left = 718
+  Height = 350
+  Top = 508
+  Width = 495
+  BorderStyle = bsDialog
+  Caption = 'Главное меню'
+  ClientHeight = 350
+  ClientWidth = 495
+  Color = clSkyBlue
+  DesignTimePPI = 120
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Font.Style = [fsBold]
+  Position = poDesktopCenter
+  LCLVersion = '4.0.0.4'
+  OnCreate = FormCreate
+  object Button1: TButton
+    Left = 112
+    Height = 63
+    Top = 120
+    Width = 264
+    Caption = 'ПРОСТЫЕ ПРОЦЕНТЫ'
+    Color = 16711808
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 112
+    Height = 63
+    Top = 187
+    Width = 264
+    Caption = 'СЛОЖНЫЕ ПРОЦЕНТЫ'
+    Color = clPurple
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Label1: TLabel
+    Left = 48
+    Height = 41
+    Top = 24
+    Width = 410
+    Caption = 'Какие проценты считаем?'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -30
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Button3: TButton
+    Left = 112
+    Height = 63
+    Top = 256
+    Width = 264
+    Caption = 'СПРАВКА'
+    Color = clPurple
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+end

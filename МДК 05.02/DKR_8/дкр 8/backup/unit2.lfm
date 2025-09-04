@@ -1,0 +1,179 @@
+object Form2: TForm2
+  Left = 734
+  Height = 348
+  Top = 244
+  Width = 495
+  BorderStyle = bsDialog
+  Caption = 'простые процентики'
+  ClientHeight = 348
+  ClientWidth = 495
+  Color = clSkyBlue
+  DesignTimePPI = 120
+  Position = poDesktopCenter
+  LCLVersion = '4.0.0.4'
+  object Button1: TButton
+    Left = 16
+    Height = 50
+    Top = 272
+    Width = 214
+    Caption = 'РАССЧИТАТЬ'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 32
+    Top = 52
+    Width = 199
+    Caption = 'Основная сумма'
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 32
+    Top = 102
+    Width = 228
+    Caption = 'Процентная ставка'
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 32
+    Top = 152
+    Width = 188
+    Caption = 'Период (в мес.)'
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object Edit1: TEdit
+    Left = 260
+    Height = 31
+    Top = 48
+    Width = 214
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 260
+    Height = 31
+    Top = 102
+    Width = 214
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 260
+    Height = 31
+    Top = 152
+    Width = 214
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Edit4: TEdit
+    Left = 260
+    Height = 31
+    Top = 202
+    Width = 214
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 4
+    OnChange = Edit4Change
+  end
+  object Label4: TLabel
+    Left = 20
+    Height = 32
+    Top = 202
+    Width = 77
+    Caption = 'Итого:'
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object Button2: TButton
+    Left = 260
+    Height = 50
+    Top = 272
+    Width = 209
+    Caption = 'ОЧИСТИТЬ'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = Button2Click
+  end
+  object Label5: TLabel
+    Left = 72
+    Height = 41
+    Top = 0
+    Width = 325
+    Caption = 'ПРОСТЫЕ ПРОЦЕНТЫ'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -30
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+end
