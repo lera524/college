@@ -1,0 +1,405 @@
+object Form1: TForm1
+  Left = 669
+  Height = 567
+  Top = 290
+  Width = 438
+  Caption = 'Калькулятор'
+  ClientHeight = 567
+  ClientWidth = 438
+  Color = 13077104
+  DesignTimePPI = 120
+  LCLVersion = '4.0.0.4'
+  OnCreate = FormCreate
+  object display: TEdit
+    Left = 24
+    Height = 88
+    Top = 32
+    Width = 392
+    Alignment = taRightJustify
+    AutoSize = False
+    Color = 14469314
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -32
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    ParentShowHint = False
+    TabOrder = 0
+  end
+  object del: TButton
+    Left = 24
+    Height = 73
+    Top = 144
+    Width = 152
+    Caption = '<-'
+    Color = clMenuText
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = delClick
+  end
+  object ce: TButton
+    Left = 184
+    Height = 73
+    Top = 144
+    Width = 72
+    Caption = 'ce'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = ceClick
+  end
+  object c: TButton
+    Left = 264
+    Height = 73
+    Top = 144
+    Width = 72
+    Caption = 'c'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = cClick
+  end
+  object kop: TButton
+    Left = 344
+    Height = 73
+    Top = 144
+    Width = 72
+    Caption = 'Кор'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = kopClick
+  end
+  object but7: TButton
+    Left = 24
+    Height = 73
+    Top = 224
+    Width = 72
+    Caption = '7'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = clickbut
+  end
+  object but8: TButton
+    Left = 104
+    Height = 73
+    Top = 224
+    Width = 72
+    Caption = '8'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    OnClick = clickbut
+  end
+  object but9: TButton
+    Left = 184
+    Height = 73
+    Top = 224
+    Width = 72
+    Caption = '9'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = clickbut
+  end
+  object butdiv: TButton
+    Left = 264
+    Height = 73
+    Top = 224
+    Width = 72
+    Caption = '/'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+    OnClick = clickoperation
+  end
+  object butsqr: TButton
+    Left = 344
+    Height = 73
+    Top = 224
+    Width = 72
+    Caption = 'x^2'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 9
+    OnClick = butsqrClick
+  end
+  object but4: TButton
+    Left = 24
+    Height = 73
+    Top = 304
+    Width = 72
+    Caption = '4'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 10
+    OnClick = clickbut
+  end
+  object but5: TButton
+    Left = 104
+    Height = 73
+    Top = 304
+    Width = 72
+    Caption = '5'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 11
+    OnClick = clickbut
+  end
+  object but6: TButton
+    Left = 184
+    Height = 73
+    Top = 304
+    Width = 72
+    Caption = '6'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 12
+    OnClick = clickbut
+  end
+  object butymn: TButton
+    Left = 264
+    Height = 73
+    Top = 304
+    Width = 72
+    Caption = '*'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 13
+    OnClick = clickoperation
+  end
+  object butx: TButton
+    Left = 344
+    Height = 73
+    Top = 304
+    Width = 72
+    Caption = '1/x'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 14
+    OnClick = butxClick
+  end
+  object but1: TButton
+    Left = 24
+    Height = 73
+    Top = 384
+    Width = 72
+    Caption = '1'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 15
+    OnClick = clickbut
+  end
+  object but2: TButton
+    Left = 104
+    Height = 73
+    Top = 384
+    Width = 72
+    Caption = '2'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 16
+    OnClick = clickbut
+  end
+  object but3: TButton
+    Left = 184
+    Height = 73
+    Top = 384
+    Width = 72
+    Caption = '3'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 17
+    OnClick = clickbut
+  end
+  object minus: TButton
+    Left = 264
+    Height = 73
+    Top = 384
+    Width = 72
+    Caption = '-'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 18
+    OnClick = clickoperation
+  end
+  object ravno: TButton
+    Left = 344
+    Height = 153
+    Top = 384
+    Width = 72
+    Caption = '='
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 19
+    OnClick = ravnoClick
+  end
+  object but0: TButton
+    Left = 24
+    Height = 73
+    Top = 464
+    Width = 152
+    Caption = '0'
+    Color = clInfoText
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 20
+    OnClick = clickbut
+  end
+  object dot: TButton
+    Left = 184
+    Height = 73
+    Top = 464
+    Width = 72
+    Caption = ','
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 21
+    OnClick = dotClick
+  end
+  object plus: TButton
+    Left = 264
+    Height = 73
+    Top = 464
+    Width = 72
+    Caption = '+'
+    Color = 13475209
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -25
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 22
+    OnClick = clickoperation
+  end
+end
