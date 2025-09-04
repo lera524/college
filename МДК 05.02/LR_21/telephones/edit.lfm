@@ -1,0 +1,138 @@
+object fEdit: TfEdit
+  Left = 413
+  Height = 240
+  Top = 556
+  Width = 433
+  BorderStyle = bsDialog
+  Caption = 'Редактор контакта'
+  ClientHeight = 240
+  ClientWidth = 433
+  Color = 16767411
+  DesignTimePPI = 120
+  Position = poMainFormCenter
+  LCLVersion = '4.0.0.4'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  object Label1: TLabel
+    Left = 8
+    Height = 26
+    Top = 8
+    Width = 218
+    Caption = 'Укажите имя контакта: '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Name = 'Sitka Text'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object eName: TEdit
+    Left = 8
+    Height = 34
+    Top = 32
+    Width = 380
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Name = 'Sitka Text'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 26
+    Top = 64
+    Width = 168
+    Caption = 'Укажите телефон: '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Name = 'Sitka Text'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object eTelephone: TEdit
+    Left = 8
+    Height = 34
+    Top = 88
+    Width = 210
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Name = 'Sitka Text'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 26
+    Top = 120
+    Width = 224
+    Caption = 'Выберите тип телефона: '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Name = 'Sitka Text'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object CBNote: TComboBox
+    Left = 8
+    Height = 34
+    Top = 144
+    Width = 210
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Name = 'Sitka Text'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 26
+    ItemIndex = 0
+    Items.Strings = (
+      'Мобильный'
+      'Домашний'
+      'Служебный'
+      'Соседский'
+    )
+    ParentFont = False
+    TabOrder = 2
+    Text = 'Мобильный'
+  end
+  object bSave: TBitBtn
+    Left = 8
+    Height = 42
+    Top = 183
+    Width = 207
+    Caption = 'Сохранить контакт'
+    Default = True
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Name = 'Sitka Text'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Kind = bkOK
+    ModalResult = 1
+    ParentFont = False
+    TabOrder = 3
+  end
+  object bCancel: TBitBtn
+    Left = 216
+    Height = 42
+    Top = 183
+    Width = 207
+    Cancel = True
+    Caption = 'Не сохранять'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Name = 'Sitka Text'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Kind = bkCancel
+    ModalResult = 2
+    ParentFont = False
+    TabOrder = 4
+  end
+end
