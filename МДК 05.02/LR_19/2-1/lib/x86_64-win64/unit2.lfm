@@ -1,0 +1,132 @@
+object Form2: TForm2
+  Left = 610
+  Height = 342
+  Top = 633
+  Width = 475
+  Caption = 'Form2'
+  ClientHeight = 342
+  ClientWidth = 475
+  DesignTimePPI = 120
+  LCLVersion = '3.8.0.0'
+  object Label1: TLabel
+    Left = 17
+    Height = 20
+    Top = 8
+    Width = 184
+    Caption = 'Введите длину стороны а: '
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 20
+    Top = 35
+    Width = 185
+    Caption = 'Введите длину стороны b: '
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 20
+    Top = 66
+    Width = 183
+    Caption = 'Введите длину стороны c: '
+  end
+  object Label4: TLabel
+    Left = 17
+    Height = 20
+    Top = 93
+    Width = 71
+    Caption = 'Площадь: '
+  end
+  object Label5: TLabel
+    Left = 16
+    Height = 20
+    Top = 123
+    Width = 78
+    Caption = 'Периметр: '
+  end
+  object Label6: TLabel
+    Left = 17
+    Height = 20
+    Top = 155
+    Width = 49
+    Caption = 'угол 1: '
+  end
+  object Label7: TLabel
+    Left = 16
+    Height = 20
+    Top = 192
+    Width = 49
+    Caption = 'угол 2: '
+  end
+  object Label8: TLabel
+    Left = 16
+    Height = 20
+    Top = 232
+    Width = 49
+    Caption = 'угол 3: '
+  end
+  object Edit1: TEdit
+    Left = 216
+    Height = 28
+    Top = 4
+    Width = 63
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 216
+    Height = 28
+    Top = 37
+    Width = 63
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 216
+    Height = 28
+    Top = 69
+    Width = 63
+    TabOrder = 2
+  end
+  object Edit4: TEdit
+    Left = 112
+    Height = 28
+    Top = 93
+    Width = 54
+    TabOrder = 3
+  end
+  object Edit5: TEdit
+    Left = 114
+    Height = 28
+    Top = 123
+    Width = 52
+    TabOrder = 4
+  end
+  object Edit6: TEdit
+    Left = 114
+    Height = 28
+    Top = 155
+    Width = 51
+    TabOrder = 5
+  end
+  object Edit7: TEdit
+    Left = 112
+    Height = 28
+    Top = 192
+    Width = 54
+    TabOrder = 6
+  end
+  object Edit8: TEdit
+    Left = 112
+    Height = 28
+    Top = 231
+    Width = 53
+    TabOrder = 7
+  end
+  object Button1: TButton
+    Left = 220
+    Height = 39
+    Top = 130
+    Width = 95
+    Caption = 'Вычислить'
+    TabOrder = 8
+    OnClick = Button1Click
+  end
+end
