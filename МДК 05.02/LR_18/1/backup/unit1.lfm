@@ -1,0 +1,66 @@
+object Form1: TForm1
+  Left = 492
+  Height = 441
+  Top = 253
+  Width = 709
+  Caption = 'Form1'
+  ClientHeight = 441
+  ClientWidth = 709
+  DesignTimePPI = 120
+  LCLVersion = '3.8.0.0'
+  object Label1: TLabel
+    Left = 72
+    Height = 37
+    Top = 64
+    Width = 584
+    Caption = 'Догадайтесь, кто сделал этот проет?'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -30
+    Font.Name = 'Script MT Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 136
+    Height = 53
+    Top = 152
+    Width = 336
+    Caption = 'Щелкни здесь!'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -27
+    Font.Name = 'Monotype Corsiva'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Label2: TLabel
+    Left = 232
+    Height = 1
+    Top = 256
+    Width = 1
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -43
+    Font.Name = 'Georgia'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object BitBtn1: TBitBtn
+    Left = 472
+    Height = 61
+    Top = 320
+    Width = 144
+    Caption = 'Выход'
+    Kind = bkAbort
+    ModalResult = 3
+    OnClick = BitBtn1Click
+    TabOrder = 1
+  end
+end

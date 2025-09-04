@@ -1,0 +1,86 @@
+object Form1: TForm1
+  Left = 697
+  Height = 451
+  Top = 222
+  Width = 657
+  Caption = 'Form1'
+  ClientHeight = 451
+  ClientWidth = 657
+  DesignTimePPI = 120
+  LCLVersion = '4.0.0.4'
+  object Memo1: TMemo
+    Left = 32
+    Height = 184
+    Top = 56
+    Width = 584
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 32
+    Height = 20
+    Top = 262
+    Width = 242
+    Caption = 'Введите число а (начало отрезка): '
+  end
+  object Label2: TLabel
+    Left = 32
+    Height = 20
+    Top = 298
+    Width = 235
+    Caption = 'Введите число b (конец отрезка): '
+  end
+  object Label3: TLabel
+    Left = 32
+    Height = 20
+    Top = 332
+    Width = 160
+    Caption = 'Введите число h (шаг): '
+  end
+  object Edit1: TEdit
+    Left = 280
+    Height = 28
+    Top = 254
+    Width = 263
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 280
+    Height = 28
+    Top = 290
+    Width = 263
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 280
+    Height = 28
+    Top = 324
+    Width = 263
+    TabOrder = 3
+  end
+  object BitBtn1: TBitBtn
+    Left = 232
+    Height = 48
+    Top = 383
+    Width = 208
+    Caption = 'Вычислить'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 4
+    OnClick = BitBtn1Click
+  end
+  object Label4: TLabel
+    Left = 272
+    Height = 37
+    Top = 8
+    Width = 103
+    Caption = 'y = x^2'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -27
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+end
